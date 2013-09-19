@@ -1,5 +1,5 @@
-This code does not work yet.
+This is a working-for-my-purposes cheat which does the same thing that a @TimedIgnore("2012-01-01") annotation would do for me, but using JUnit assumeTrue() on a date parameter.
 
-I am interested in building "timed ignore" i.e. @Ignore(new DateTime("2013-09-20") and have the @Ignore no longer ignore after the given date.
+It would be more fun to actually implement @TimedIgnore("2012-01-01") though.
 
-Using example from http://techo-ecco.com/blog/spring-custom-annotations/
+to run: gradle clean test

@@ -8,8 +8,7 @@ public class TestHelper {
 
 //    Remove usage of this method if the date today is after the runAfter date
     static void runAfterDateBecause(String runAfter, String reasonToStartRunning) {
-        if (givenDateIsAfterCurrentDate(runAfter)) { // May have to replace this with non-Joda date parsing in older codebases
-//            Logger.log("Running test because " + reasonToStartRunning);
+        if (givenDateIsAfterCurrentDate(runAfter)) {
             System.out.println("Running test because " + reasonToStartRunning + " ...If this test passes, please delete the runAfterDateBecause usage");
         } else {
             System.out.println("Skipping test because run date is in the future: " + runAfter);
@@ -28,6 +27,6 @@ public class TestHelper {
         }
         return new Date().after(givenDate);
 
-//        return new DateTime().isAfter(new DateTime(date)); // JodaTime
+//        return new DateTime().isAfter(new DateTime(date)); // it's easier when using Joda
     }
 }

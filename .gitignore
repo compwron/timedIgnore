@@ -1,0 +1,7 @@
+.gradle
+.DS_Store
+.idea
+lib
+out
+CalendarMess.iml
+build
